@@ -88,3 +88,4 @@ ON d.RepartoID = r.RepartoID
 	SUM, AVG, COUNT, MIN e MAX 
 	permettono calcoli su gruppi di dati in SQL Server.
 */
+
