@@ -68,3 +68,14 @@ GROUP BY  d.Nome, d.Cognome, d.Salario, r.Nome, r.Sede
 ORDER BY r.Nome Desc
 
 --Sto modificando da vs code
+
+SELECT 
+	d.Nome + ' - ' + d.Cognome AS 'Nome completo del dipendente',
+	d.Salario,
+	AVG(d.Salario) AS 'Stipendio media', 
+	r.Nome AS 'Nome del reparto',
+	r.Sede
+FROM Dipendenti As d
+INNER JOIN Reparti AS r ON r.RepartoID = d.RepartoID 
+GROUP BY  d.Nome, d.Cognome, d.Salario, r.Nome, r.Sede
+ORDER BY r.Nome Desc
