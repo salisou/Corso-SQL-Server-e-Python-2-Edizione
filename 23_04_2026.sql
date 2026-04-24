@@ -66,3 +66,5 @@ FROM Dipendenti As d
 INNER JOIN Reparti AS r ON r.RepartoID = d.RepartoID 
 GROUP BY  d.Nome, d.Cognome, d.Salario, r.Nome, r.Sede
 ORDER BY r.Nome Desc
+
+--Sto modificando da vs code
